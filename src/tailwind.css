@@ -1,4 +1,23 @@
-/* ./your-css-folder/styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+label {
+  @apply font-semibold tracking-wide inline-block mt-4 uppercase text-xs mb-3;
+}
+
+::placeholder {
+  @apply font-light;
+}
+
+.input.select {
+  @apply appearance-none bg-white w-full;
+}
+
+.input {
+  @apply text-gray-900 py-3 px-4 w-full border font-normal border-gray-300 rounded focus:outline-none ring-offset-purple-600 focus:ring-2 focus:ring-blue-100 transform ease-in duration-200;
+}
+
+.footer a {
+  @apply text-gray-500 font-semibold text-sm;
+}
